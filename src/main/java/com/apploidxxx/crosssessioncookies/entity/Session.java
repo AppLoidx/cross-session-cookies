@@ -8,7 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity@NoArgsConstructor@Data
+@Entity
+@NoArgsConstructor
+@Data
 public class Session {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

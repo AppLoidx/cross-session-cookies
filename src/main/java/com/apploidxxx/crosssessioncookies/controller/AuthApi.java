@@ -40,6 +40,4 @@ public class AuthApi {
 
         return session.getToken();
     }
-
-
 }
