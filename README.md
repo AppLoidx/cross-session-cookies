@@ -136,13 +136,16 @@ public class UserApi {
 
 After running application you can check results from diffrent browsers
 
-For example, go to page "localhost:8080/auth" -> copy session and go to page "localhost:8080/user?session=<YOUR_TOKEN>"
+For example, go to page `"localhost:8080/auth"` -> copy session and go to page 
+```
+"localhost:8080/user?session=<YOUR_TOKEN>"
+```
 
 You get "Success"
 
 And then check it from cURL:
 ```
-curl -X GET "localhost:8080/user?session=Tp9e-DwvG-5qkN-TuTV"
+curl -X GET "localhost:8080/user?session=<SAME_TOKEN>"
 ```
 
 And you will get "You use another IP or another browser. Please re-auth."
